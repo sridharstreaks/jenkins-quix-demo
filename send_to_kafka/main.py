@@ -20,6 +20,7 @@ def get_weather():
 
 def main():
     app = Application(
+        broker_address="localhost:19092",
         loglevel="DEBUG",
     )
 
