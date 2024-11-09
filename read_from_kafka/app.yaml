@@ -1,0 +1,15 @@
+name: read_from_kafka
+language: Python
+variables:
+  - name: input
+    inputType: InputTopic
+    defaultValue: weather_data_demo
+    required: false
+  - name: output
+    inputType: OutputTopic
+    defaultValue: weather_data_demo
+    required: false
+dockerfile: dockerfile
+runEntryPoint: main.py
+defaultFile: main.py
+libraryItemId: starter-transformation
